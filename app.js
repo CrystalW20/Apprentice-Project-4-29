@@ -14,7 +14,7 @@ $(".createMagnetButton").click(function(){
   // Gather the value from the User input field
 
   function getUserInput(){
-    return $( "input[type= text]").val();
+    return $( "input[type= text]").val().replace(/(?:\r\n|\r|\n)/g, ',').split(',');
   };
 
   // Create the <div> to store the new magnets value
