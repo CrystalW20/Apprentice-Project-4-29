@@ -1,4 +1,4 @@
-
+let magnets;
 
 function drag() {
   $(".drag").draggable({
@@ -7,14 +7,17 @@ function drag() {
 };
 
 // Event Handler for createMagnetButton
-$(".createMagnetButton").click(function(){
+$(" .createMagnetButton").click(function(){
   magnetCreation();
+  $("textarea").val('')
 
 });
   // Gather the value from the User input field
 
   function getUserInput(){
-    return $( "input[type= text]").val().replace(/(?:\r\n|\r|\n)/g, ',').split(',');
+    let str;
+    str =   $( "textarea").val().replace(/(?:\r\n|\r|\n)/g, ',');
+    return magnets= str.split(',')
   };
 
   // Create the <div> to store the new magnets value
