@@ -1,10 +1,8 @@
 let magnets;
-
-function drag() {
-  $(".drag").draggable({
-    drag: function(click, ui) {}
-  });
-}
+// Allow magnet divs to be draggable
+$(function drag() {
+  $(".drag").draggable({ containment: "#containment-wrapper", scroll: false });
+});
 
 // Event Handler for createMagnetButton
 $(" .createMagnetButton").click(function() {
