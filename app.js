@@ -15,12 +15,16 @@ $(" .createMagnetButton").click(function(){
   // Gather the value from the User input field
 
   function getUserInput(){
-    let str;
-    str =   $( "textarea").val().replace(/(?:\r\n|\r|\n)/g, ',');
-    return magnets= str.split(',')
+    magnets =   $( "textarea").val().split("\n")
+    return magnets
   };
 
   // Create the <div> to store the new magnets value
   function magnetCreation(){
-    $("div").add(`<div>${getUserInput()}</div>`).addClass("drag").appendTo(document.body)
+    getUserInput()
+    $(magnets).each(function(i,e) {
+      ($("div").add(`<div>${magnets[i]}</div>`).addClass("drag").appendTo(document.body))
+
+    })
+
   }
