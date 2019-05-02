@@ -33,3 +33,9 @@ function magnetCreation() {
       });
   });
 }
+
+// Reset fridge and textarea
+$(".reset").click(function Reset() {
+  $("textarea").val("");
+  $(".drag").remove();
+});

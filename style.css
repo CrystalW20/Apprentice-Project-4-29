@@ -11,8 +11,10 @@
   z-index: 0;
 }
 textarea {
-  width: 600px;
+  width: 50%;
   height: 120px;
+  margin-left: auto;
+  margin-right: auto;
   border: 3px solid #cccccc;
   padding: 5px;
   font-family: Tahoma, sans-serif;
@@ -20,17 +22,32 @@ textarea {
   background-position: bottom right;
   background-repeat: no-repeat;
   border-radius: 12px;
+  display: block;
 }
-button {
+.createMagnetButton {
   background-color: #008cba;
   font-size: 12px;
   padding: 12px 28px;
   border-radius: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reset {
+  background-color: red;
+  font-size: 10px;
+  padding: 12px 24px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 button:hover {
   background-color: #008cba0;
   color: white;
+  cursor: pointer;
 }
 
 /* img {
@@ -47,17 +64,20 @@ button:hover {
 
 .fridge {
   max-width: 55vw;
-  max-height: 75vh;
+  max-height: 85vh;
   min-width: 50vw;
-  min-height: 50vh;
+  min-height: 60vh;
+  width: 50%;
+  margin: auto;
   background-color: rgba(170, 240, 209);
   /* padding: 10vh 100vh; */
   border: solid black;
   border-radius: 10%;
+  align-content: center;
 }
 
 .handle {
-  position: absolute;
+  position: relative;
   top: 100px;
   left: 30px;
   height: 130px;
