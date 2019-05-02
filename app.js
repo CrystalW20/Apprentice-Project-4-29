@@ -1,13 +1,14 @@
 let magnets;
 // Allow magnet divs to be draggable
-$(function drag() {
-  $(".drag").draggable({ containment: "#containment-wrapper", scroll: false });
-});
+function drag() {
+  $(".drag").draggable({ containment: ".fridge", scroll: false });
+}
 
 // Event Handler for createMagnetButton
 $(" .createMagnetButton").click(function() {
   magnetCreation();
   $("textarea").val("");
+  drag();
 });
 // Gather the value from the User input field
 

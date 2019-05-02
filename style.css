@@ -8,7 +8,29 @@
   box-shadow: 0px 1px 0 #242424, 1px 0px 0 #242424, 1px 2px 0 #242424,
     2px 1px 0 #242424, 2px 2px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  z-index: 10;
+  z-index: 0;
+}
+textarea {
+  width: 600px;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
+  font-family: Tahoma, sans-serif;
+  background-image: url(bg.gif);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+}
+button {
+  background-color: #008cba;
+  font-size: 12px;
+  padding: 12px 28px;
+  border-radius: 12px;
+}
+
+button:hover {
+  background-color: #008cba0;
+  color: white;
 }
 
 /* img {
@@ -24,32 +46,19 @@
 } */
 
 .fridge {
-  max-width: 75vw;
+  max-width: 55vw;
   max-height: 75vh;
   min-width: 50vw;
   min-height: 50vh;
   background-color: rgba(170, 240, 209);
-  padding: 100vh 100vh;
+  /* padding: 10vh 100vh; */
   border: solid black;
   border-radius: 10%;
 }
 
 .handle {
   position: absolute;
-  top: 200px;
-  left: 20px;
-}
-#containment-wrapper {
-  width: 95%;
-  height: 150px;
-  border: 2px solid #ccc;
-  padding: 10px;
-}
-
-.draggable {
-  width: 90px;
-  height: 90px;
-  padding: 0.5em;
-  float: left;
-  margin: 0 10px 10px 0;
+  top: 100px;
+  left: 30px;
+  height: 130px;
 }
