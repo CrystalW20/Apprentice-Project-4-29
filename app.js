@@ -1,7 +1,25 @@
 let magnets;
+
+let index_highest = 0;
 // Allow magnet divs to be draggable
 function drag() {
-  $(".drag").draggable({ containment: ".fridge", scroll: false });
+  $(".drag").draggable({
+    containment: ".fridge",
+    scroll: false,
+    start: meFirst
+  });
+}
+// Update the Z index so the selected Div is on top
+function meFirst() {
+  $(".drag").each(function() {
+    let indexCurrent = parseInt($(this).css("zIndex"), 10);
+    if (indexCurrent >= index_highest) {
+      index_highest = indexCurrent;
+    }
+  });
+  $(this).css({
+    "z-index": index_highest + 1
+  });
 }
 
 // Event Handler for createMagnetButton
