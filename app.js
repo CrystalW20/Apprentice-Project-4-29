@@ -33,7 +33,10 @@ $(" .createMagnetButton").click(function() {
 function getUserInput() {
   magnets = $("textarea")
     .val()
-    .split("\n");
+    .split("\n")
+    .filter(function(x) {
+      return x.trim() != "";
+    });
   return magnets;
 }
 

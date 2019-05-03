@@ -15,16 +15,14 @@
   text-overflow: ellipsis;
 }
 
-.meFirst {
-  z-index: 15;
-}
-
 body {
-  background-image: url("");
+  background-image: url("Kitchen2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 textarea {
   width: 50%;
-  height: 120px;
+  height: 30px;
   margin-left: auto;
   margin-right: auto;
   border: 3px solid #cccccc;
@@ -35,6 +33,7 @@ textarea {
   background-repeat: no-repeat;
   border-radius: 12px;
   display: block;
+  overflow: scroll;
 }
 .createMagnetButton {
   background-color: #008cba;
