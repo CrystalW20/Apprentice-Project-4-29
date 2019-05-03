@@ -1,6 +1,6 @@
 let magnets;
-
 let index_highest = 0;
+
 // Allow magnet divs to be draggable
 function drag() {
   $(".drag").draggable({
@@ -9,6 +9,7 @@ function drag() {
     start: meFirst
   });
 }
+
 // Update the Z index so the selected Div is on top
 function meFirst() {
   $(".drag").each(function() {
@@ -28,6 +29,7 @@ $(" .createMagnetButton").click(function() {
   $("textarea").val("");
   drag();
 });
+
 // Gather the value from the User input field
 
 function getUserInput() {

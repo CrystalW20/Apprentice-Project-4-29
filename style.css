@@ -10,7 +10,7 @@
   cursor: pointer;
   z-index: 0;
   white-space: nowrap;
-  width: 100px;
+  width: auto;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -61,27 +61,13 @@ button:hover {
   cursor: pointer;
 }
 
-/* img {
-  position: relative;
-  top: 3px;
-  right: 100px;
-  background-color: rgba(170, 240, 209);
-  visibility: visible;
-  max-width: 10vh;
-  max-height: 10vh;
-  min-width: 5vh;
-  min-height: 5vh;
-} */
-
 .fridge {
-  /* max-width: 65vw;
-  max-height: 85vh; */
-  width: 60vw;
-  height: 60vh;
-  /* width: 50%; */
+  max-width: 65vw;
+  max-height: 85vh;
+  min-width: 60vw;
+  min-height: 60vh;
   margin: auto;
   background-color: rgba(170, 240, 209);
-  /* padding: 10vh 100vh; */
   border: solid black;
   border-radius: 10%;
   align-content: center;
