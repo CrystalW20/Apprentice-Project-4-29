@@ -10,7 +10,7 @@
   cursor: pointer;
   z-index: 0;
   white-space: nowrap;
-  width: auto;
+  max-width: auto;
   overflow: hidden;
   text-overflow: ellipsis;
 }
